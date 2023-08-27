@@ -5,11 +5,12 @@
     <title>Latihan HTML & CSS</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
     <div class="header">
         <div class="header-logo">NINJA KEN</div>
         <div class="header-list">
-            <ul class="flex-list">
+            <ul class="header-flexlist">
                 <li class="li1">Tentang Saya</li>
                 <li class="li2">Proyek Contoh</li>
                 <li class="li3">Hubungi Saya</li>
@@ -24,50 +25,48 @@
         </div>
 
         <div class="contents">
-            <div class="about">
-                <h2>Tentang Saya</h2>
+            <div class="contents-about">
+                <h2 id="Tentang Saya">Tentang Saya</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-
-            <div class="contents-item">
-                <h3>Contoh Proyek</h3>
-                <img src="image1.png">
-                <p>Image 1</p>
+            <div class="section-title">
+                <h3>Proyek Contoh</h3>
             </div>
-
-            <div class="contents-item">
-                <img src="image2.png">
-                <p>Image 2</p>
+            <div class="contents-items">
+                <div class="contents-item">
+                    <img src="image1.png">
+                    <p>Image 1</p>
+                </div>
+    
+                <div class="contents-item">
+                    <img src="D:\image2.png">
+                    <p>Image 2</p>
+                </div>
+    
+                <div class="contents-item">
+                    <img src="D:\image3.png">
+                    <p>Image 3</p>
+                </div>
             </div>
-
-            <div class="contents-item">
-                <img src="image3.png">
-                <p>Image 3</p>
-            </div>
+        </div>
 
         <div class="contact-form">
-            <h3 class="section-title">Hubungi Saya</h3>
-
-            <p>Email (Diperlukan)</p>
-            <input>
-            <p>Message (Diperlukan)</p>
-            <textarea></textarea>
-            <p></p>
+            <h3 class="contact-title">Hubungi Saya</h3>
+            <input type="text" placeholder="Email (Diperlukan)">
+            <textarea type="textarea" placeholder="Message (Diperlukan)"></textarea>
             <input class="contact-submit" type="submit" value="Kirim">
         </div>
-
     </div>
-    <div class="footer">
+
+    <footer>
         <div class="footer-logo">NINJA KEN</div>
         <div class="footer-list">
-            <ul>
-                <li>Tentang Saya</li>
-                <li>Proyek Contoh</li>
-                <li>Hubungi Saya</li>
+            <ul class="footer-flexlist">
+                <li class="li1">Tentang Saya</li>
+                <li class="li2">Proyek Contoh</li>
+                <li class="li3">Hubungi Saya</li>
             </ul>
         </div>
-    </div>
-        
-    </div>
+    </footer>
 </body>
 </html>
