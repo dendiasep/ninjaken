@@ -40,7 +40,7 @@ ul.ul1 {
     }
 }
 
-@media (max-width :725px) {
+@media (max-width :670px) {
     ul.ul1 {
         font-size: 15px;
         padding-left: 5px;
