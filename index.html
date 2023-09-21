@@ -2,8 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latihan HTML & CSS</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -39,29 +41,395 @@
             <div class="section-title">
                 <h3 id="Proyek Contoh">Proyek Contoh</h3>
             </div>
-            <div class="contents-items">
-                <div class="contents-item">
-                    <img src="image1.png">
+            <div class="slider-container">      
+                <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+                    
+                <div class="slider-item fade" >
+                    <img id= "image1" src="image/image1.png">
+                    <style>
+                        #image1 {
+                            cursor: pointer;
+                        }
+                    </style>
                     <p>Image 1</p>
                 </div>
+                <!-- The Modal1 -->
+                <div id="myModal1">
+                    <div id="modalContent">
+                      <span id="closeModalIcon1">&times;</span>
+                      <div class="modal-content">
+
+                        <div class = "modal-image">
+                            <img src="image/image modal 1.jpg" id="modalImg1">
+                            <p id="caption">Gambar gunung dengan langit berwarna biru muda</p>
+                        </div>
+                        
+                        <style>
+                            #myModal1 {
+                                display: none; /* Menambahkan display:none; */
+                                position: fixed;
+                                z-index: 1; /* Sit on top */
+                                /* Location of the box */
+                                left: 0;
+                                top: 0;
+                                width: 100%; /* Full width */
+                                height: 100%; /* Full height */
+                                overflow: auto; /* Enable scroll if needed */
+                                background-color: rgb(0,0,0); /* Fallback color */
+                                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+                                
+                            }
+
+                            
+                            /* Add Animation - Zoom in the Modal */
+                            #modalImg1, #caption {
+                                animation-name: zoom;
+                                animation-duration: 0.6s;
+                            }
+
+                            @keyframes zoom {
+                                from {transform:scale(0)}
+                                to {transform:scale(1)}
+                            }
+
+
+                            #modalImg1 {
+                                margin: auto;
+                                display: block;
+                                height: 50%;
+                                width: 80%;
+                                max-width: 40%;
+                                padding-top: 100px;
+                            }
+                            
+                            #closeModalIcon1 {
+                                color: #f7eaea;
+                                float: right;
+                                font-size: 40px;
+                                margin-right: 20px;
+                            }
+
+                            #closeModalIcon1:hover,
+                            #closeModalIcon1:focus {
+                                color: #797373;
+                                cursor: pointer;
+                            }
+                        </style>
+                      </div>
+                      
+                    </div>
+                </div>
     
-                <div class="contents-item">
-                    <img src="image2.png">
+                <div class="slider-item fade">
+                    <img id= "image2" src="image/image2.png">
+                    <style>
+                        #image2 {
+                            cursor: pointer;
+                        }
+                    </style>
                     <p>Image 2</p>
                 </div>
+                <!-- The Modal2 -->
+                <div id="myModal2">
+                    <div id="modalContent">
+                      <span id="closeModalIcon2">&times;</span>
+                      <div class="modal-content">
+
+                        <div class = "modal-image">
+                            <img src="image/image modal 2.jpg" id="modalImg2">
+                            <p id="caption">Gambar gunung dengan langit berwarna biru tua</p>
+                        </div>
+                        
+                        <style>
+                            #myModal2 {
+                                display: none; /* Menambahkan display:none; */
+                                position: fixed;
+                                z-index: 1; /* Sit on top */
+                                /* Location of the box */
+                                left: 0;
+                                top: 0;
+                                width: 100%; /* Full width */
+                                height: 100%; /* Full height */
+                                overflow: auto; /* Enable scroll if needed */
+                                background-color: rgb(0,0,0); /* Fallback color */
+                                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+                                
+                            }
+
+                            
+                            /* Add Animation - Zoom in the Modal */
+                            #modalImg2, #caption {
+                                animation-name: zoom;
+                                animation-duration: 0.6s;
+                            }
+
+                            @keyframes zoom {
+                                from {transform:scale(0)}
+                                to {transform:scale(1)}
+                            }
+
+
+                            #modalImg2 {
+                                margin: auto;
+                                display: block;
+                                height: 50%;
+                                width: 80%;
+                                max-width: 40%;
+                                padding-top: 100px;
+                            }
+                            
+                            #closeModalIcon2 {
+                                color: #f7eaea;
+                                float: right;
+                                font-size: 40px;
+                                margin-right: 20px;
+                            }
+
+                            #closeModalIcon2:hover,
+                            #closeModalIcon2:focus {
+                                color: #797373;
+                                cursor: pointer;
+                            }
+                        </style>
+                      </div>
+                      
+                    </div>
+                </div>
     
-                <div class="contents-item">
-                    <img src="image3.png">
+                <div class="slider-item fade">
+                    <img id = "image3"  src="image/image3.png">
+                    <style>
+                        #image3 {
+                            cursor: pointer;
+                        }
+                    </style>
                     <p>Image 3</p>
                 </div>
+                <!-- The Modal3 -->
+                <div id="myModal3">
+                    <div id="modalContent">
+                      <span id="closeModalIcon3">&times;</span>
+                      <div class="modal-content">
+
+                        <div class = "modal-image">
+                            <img src="image/image modal 3.jpg" id="modalImg3">
+                            <p id="caption">Gambar gunung dengan langit berwarna ungu</p>
+                        </div>
+                        
+                        <style>
+                            #myModal3 {
+                                display: none; /* Menambahkan display:none; */
+                                position: fixed;
+                                z-index: 1; /* Sit on top */
+                                /* Location of the box */
+                                left: 0;
+                                top: 0;
+                                width: 100%; /* Full width */
+                                height: 100%; /* Full height */
+                                overflow: auto; /* Enable scroll if needed */
+                                background-color: rgb(0,0,0); /* Fallback color */
+                                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+                                
+                            }
+
+                            
+                            /* Add Animation - Zoom in the Modal */
+                            #modalImg3, #caption {
+                                animation-name: zoom;
+                                animation-duration: 0.6s;
+                            }
+
+                            @keyframes zoom {
+                                from {transform:scale(0)}
+                                to {transform:scale(1)}
+                            }
+
+
+                            #modalImg3 {
+                                margin: auto;
+                                display: block;
+                                height: 50%;
+                                width: 80%;
+                                max-width: 40%;
+                                padding-top: 100px;
+                            }
+                            
+                            #closeModalIcon3 {
+                                color: #f7eaea;
+                                float: right;
+                                font-size: 40px;
+                                margin-right: 20px;
+                            }
+
+                            #closeModalIcon3:hover,
+                            #closeModalIcon3:focus {
+                                color: #797373;
+                                cursor: pointer;
+                            }
+                        </style>
+                      </div>
+                      
+                    </div>
+                </div>
+
+                <div class="slider-item fade">
+                    <img id = "image4" src="image/image4.png">
+                    <style>
+                        #image3 {
+                            cursor: pointer;
+                        }
+                    </style>
+                    <p>Image 4</p>
+                </div>
+                <!-- The Modal4 -->
+                <div id="myModal4">
+                    <div id="modalContent">
+                      <span id="closeModalIcon4">&times;</span>
+                      <div class="modal-content">
+
+                        <div class = "modal-image">
+                            <img src="image/image modal 4.jpg" id="modalImg4">
+                            <p id="caption">Gambar gunung dengan langit berwarna abu-abu</p>
+                        </div>
+                        
+                        <style>
+                            #myModal4 {
+                                display: none; /* Menambahkan display:none; */
+                                position: fixed;
+                                z-index: 1; /* Sit on top */
+                                /* Location of the box */
+                                left: 0;
+                                top: 0;
+                                width: 100%; /* Full width */
+                                height: 100%; /* Full height */
+                                overflow: auto; /* Enable scroll if needed */
+                                background-color: rgb(0,0,0); /* Fallback color */
+                                background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+                                
+                            }
+
+                            
+                            /* Add Animation - Zoom in the Modal */
+                            #modalImg4, #caption {
+                                animation-name: zoom;
+                                animation-duration: 0.6s;
+                            }
+
+                            @keyframes zoom {
+                                from {transform:scale(0)}
+                                to {transform:scale(1)}
+                            }
+
+
+                            #modalImg4 {
+                                margin: auto;
+                                display: block;
+                                height: 50%;
+                                width: 80%;
+                                max-width: 40%;
+                                padding-top: 100px;
+                            }
+                            
+                            #closeModalIcon4 {
+                                color: #f7eaea;
+                                float: right;
+                                font-size: 40px;
+                                margin-right: 20px;
+                            }
+
+                            #closeModalIcon4:hover,
+                            #closeModalIcon4:focus {
+                                color: #797373;
+                                cursor: pointer;
+                            }
+                        </style>
+                      </div>
+                      
+                    </div>
+                </div>
+                
+                
+                <a class="next" onclick="updateSlide(1)">&#10095;</a>
+
+               
             </div>
+
+            <script src="script.js"></script>
+
+            <div class="clear"></div>
         </div>
 
         <div class="contact-form">
             <h3 class="contact-title" id="Hubungi Saya">Hubungi Saya</h3>
-            <input type="text" placeholder="Email (Diperlukan)">
+            <input id = "inputEmail" type="email" placeholder="Email (Diperlukan)">
+                <p id="result"></p>
+           
             <textarea type="textarea" placeholder="Message (Diperlukan)"></textarea>
-            <input class="contact-submit" type="submit" value="Kirim">
+            <input id="contact-submit" type="submit" value="Kirim">
+
+            <!-- tampilkan pesan kesalahan -->
+            <script>
+                const button = document.getElementById("contact-submit");
+                
+                button.addEventListener("click", function () {
+                  const x = document.getElementById("inputEmail").value;
+                  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                  console.log(x);
+                  if (x.match(mailformat)) {
+                    
+                    const outhtml = document.getElementById("result");
+                    outhtml.textContent = "";
+                    outhtml.style.color = "";
+                    result.appendChild(outhtml);
+
+                  } else {
+                    const outhtml = document.getElementById("result");
+                    outhtml.textContent = "*Email yang anda masukan salah";
+                    outhtml.style.color = "red";
+                    result.appendChild(outhtml);
+                  }
+                });
+            </script>
+            
+        </div>
+
+        <div class="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+
+            <button class="accordion">Apa Hobi & Kegiatan yang Dilakukan Saat Waktu Luang?</button>
+            <div class="panel">
+                <p>Untuk hobi saya yang sekarang yaitu mengisi waktu luang dengan membuat konten media sosial.
+                    Sedangkan kegiatan yang saya lakukan saat waktu senggang, saya biasa mengikuti Boothcamp tau Kelas Online untuk meningkatkan akill</p>
+            </div>
+
+            <button class="accordion">Pekerjaan Apa yang Disukai?</button>
+            <div class="panel">
+                <p>Saya suka bekerja di lingkungan yang saling mendukung, baik saat bekerja secara tim maupun individu. Keseimbangan inilah yang sangat membantu saya menjalankan tugas dengan baik sebagai content writer. Saya suka berkolaborasi, namun saya juga senang ketika bisa fokus bekerja secara mandiri.</p>
+            </div>
+
+            <button class="accordion">Apa kelebihan dan kekurangan kamu?</button>
+            <div class="panel">
+                <p>Kelebihan saya adalah saya mampu membagi waktu dengan baik. Ketika ada workload yang banyak, saya bisa urutkan prioritas dan selesaikan tugas sesuai deadline.
+
+                    Kelemahan saya adalah terkadang saya kehilangan fokus. Belakangan ini, saya selalu terapkan teknik Pomodoro dan itu sangat membantu saya untuk menjaga fokus.</p>
+           
+
+            <script>
+                // untuk accordion
+                const acc = document.getElementsByClassName("accordion");
+
+                for (let i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    const panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display ="block";
+                    }
+                })
+                }
+            </script>
         </div>
     </div>
 
